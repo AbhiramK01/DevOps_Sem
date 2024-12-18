@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Registration form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form name="f1">
+        Name: <input type="text" id="name"><br>
+        Father Name: <input type="text" id="fname"><br>
+        Mother Name: <input type="text" id="mname"><br>
+        E-mail: <input type="text" id="mail"><br>
+        Phone number: <input type="text" id="pno"><br>
+        Gender: <br><input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female<br>
+        Education: <select id="edu">
+            <option value="PG">PG</option>
+            <option value="G">G</option>
+            <option value="UG">UG</option>
+            </select><br>
+        Upload picture: <input type="file" id="pic" accept="image/*"><br>
+        Upload Signature: <input type="file" id="sign" accept="image/*"><br>
+        <input type="button" value="Submit" onclick="validate();">
+        <input type="reset" value="Reset">
+    </form>
+    <script src="validate.js"></script>
+</body>
+</html>
